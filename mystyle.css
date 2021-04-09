@@ -1,0 +1,582 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container .row{
+    /* border: 1px solid black; */
+}
+/* header */
+header .container-fluid{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(img/photo-todd-quackenbush-n-124.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -333px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+header .container-fluid .container > .row{
+    margin-top: 10px;
+}
+header .container-fluid > span{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .container-fluid .line{
+    position: absolute;
+    top: 490px;
+    left: -110px;
+}
+header .container-fluid .line ul li {
+    display: inline-block;
+    width: 10px;
+    border: 1px solid white;
+    float: left;
+}
+header .container-fluid .line ul li:first-child{
+    width: 800px;
+    height: 260px;
+    transform: rotate(25deg);
+    background-color: white;
+}
+header .container-fluid .line ul li:nth-child(2){
+    width: 276px;
+    height: 185px;
+    margin-left: -470px;
+    transform: rotate(-25deg);
+    background-color: white;
+}
+header .container-fluid .line ul li:nth-child(3){
+    width: 330px;
+    height: 202px;
+    margin-left: -290px;
+    transform: rotate(20deg);
+    background-color: white;
+}
+header .container-fluid .line ul li:nth-child(4){
+    width: 330px;
+    height: 202px;
+    /* margin-left: -290px; */
+    transform: rotate(160deg);
+    background-color: white;
+}
+header .container-fluid .line ul li:nth-child(5){
+    width: 280px;
+    height: 185px;
+    margin-left: -96px;
+    transform: rotate(-155deg);
+    background-color: white;
+}
+header .container-fluid .line ul li:nth-child(6){
+    width: 2000px;
+    height: 300px;
+    margin-left: -275px;
+    transform: rotate(155deg);
+    background-color: white;
+    float: right;
+}
+header .container-fluid::after{
+    content: " ";
+    
+}
+header #logo {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+header #logo span{
+    color: #ff8b25;
+    font-family: 'Playfair Display', sans-serif;
+    
+}
+/* header .top-menu a{
+    
+} */
+header .top-menu ul li a{
+    color: #ffb932;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.5s ease-in;
+    border-bottom: 2px solid transparent;
+    transition: border-width 1s ease-in, border-color 1s ease-in, color .5s ease-in;
+}
+header .top-menu ul li:hover a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+}
+header .top-menu ul li:last-child{
+    position: relative;
+}
+header .top-menu ul li #txtSearch{
+    width: 30px;
+    border: none;
+    outline: none;
+    display: block;
+    caret-color: transparent;
+    background-color: transparent;
+    transition: width 1s ease-in;
+}
+header .top-menu ul li:last-child:hover #txtSearch{
+    display: block;
+    width: 180px;
+    background-color: white;
+    caret-color: black;
+}
+header .top-menu ul li:last-child #txtSearch:hover{
+    display: block;
+    width: 180px;
+}
+header .top-menu ul li:last-child a{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    color: #ffb932 !important;
+    border: none !important;
+}
+header  h1:last-child{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+header .row:nth-child(2){
+    margin-top: 115px;
+}
+header h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+header button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 20px 25px;
+    color: white;
+    border-color: white ;
+    background-color: transparent;
+    transition: color 0.3s ease-in;
+}
+header button:hover{
+    color: #ff8b25;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: rgba(0, 0, 0, 0.6);
+}
+
+/* main */
+
+.main .container-fluid {
+    padding: 90px 0;
+    background-image: url(img/architecture-3014.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.1; */
+}
+.main h3:first-child {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 29px;
+    line-height: 100%;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 400;
+}
+.main span{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
+    display: block;
+    width: 100%;
+    margin: 10px 0 ;
+    line-height: 100%;
+    text-align: center !important;
+    position: relative;
+}
+.main span::after{
+    content: " ";
+    position: absolute;
+    top: -5px;
+    right: 30px;
+    height: 50px;
+    width: -6px;
+    border: 3px solid transparent;
+    border-left-color: black ;
+    transform: rotate(90deg);
+}
+.main span::before{
+    content: " ";
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    height: 50px;
+    width: -6px;
+    border: 3px solid transparent;
+    border-left-color: black ;
+    transform: rotate(90deg);
+}
+
+.main  p#des{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0;
+    display: block;
+    line-height: 100%;
+    text-align: center;
+}
+.main .services i{
+    font-size: 28px;
+    text-align: center;
+    padding: 35px;
+}
+.main .services h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700 ;
+    float:left;
+    transition: color 0.3s ease-in;
+}
+.main .services p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+}
+.main .services p::after{
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border: 4px solid transparent;
+    border-bottom-color: black ;
+    width: 60px;
+    transition: border-color 0.3s ease-in;
+}
+.main .services > .col:hover p::after,.col:hover h3 {
+    color: #ff8b25;
+    border-bottom-color: #ff8b25;
+}
+
+.main .bg2 {
+    height: 225px;
+    background-image: url(img/unsplash_5244800b1ebf4_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -365px;
+}
+.main .bg2 .row p {
+    display: block;
+    height: 100%;
+    color: white;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 23px;
+    line-height: 100%;
+}
+.projects p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+.projects .main-menu ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease-in;
+}
+.projects .main-menu ul li a::after{
+    content: " ";
+    position:absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0px;
+    border: 3px solid transparent;
+    transition: width 0.3s ease-in,border-bottom-color 0.3s ease-in;
+    /* border-bottom-color: black; */
+}
+.projects .main-menu ul li:hover a,a::after{
+    text-decoration: none;
+    color: #ff8b25;
+    
+}
+.projects .main-menu ul li:hover a::after{
+    border-bottom-color: #ff8b25;
+    width: 70px;
+}
+.projects .show-projects {
+    height: 380px;    
+}
+
+.projects .show-projects .col{
+    padding: 0 0;
+    
+}
+.projects .show-projects img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid transparent;
+    position: relative;
+}
+.projects .show-projects .img1 img,#img-hover{
+    height: 380px !important;
+    width: 270px !important;
+}
+.projects .show-projects .img2 img{
+    width: 300px !important;
+    height: 190px !important;
+}
+.projects .show-projects .img3 img,.img4 img{
+    width: 175px !important;
+    height: 190px !important;
+}
+.projects .show-projects .img5 img{
+    width: 270px !important;
+    height: 380px !important;
+
+}
+.projects .show-projects .img6 img{
+    width: 300px !important;
+    height: 190px !important;
+}
+.projects .show-projects .view-all {
+    display: block;
+    width: 300px;
+    height: 184px;
+    text-align: center;
+    line-height: 184px;
+}
+.projects .show-projects a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.projects .show-projects #img-hover{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.projects .show-projects #img-hover #link{
+    
+}
+/* .projects .show-projects img::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+.projects .show-projects a:hover img{
+    border: 2px solid #ff8b25;
+}
+.projects .show-projects{
+    /* margin-bottom: 70px; */
+}
+
+/* footer */
+
+footer{
+    background-image: url(img/black-and-white-bridge-grids-1832.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(48, 44, 44);
+    position: relative;
+    background-position-y: -235px;
+}
+
+footer .container-fluid {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+footer .slide-brands{
+    height: 150px;
+    background-color: white;
+    transform: translateY(-70px);
+}
+footer .slide-brands a{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+}
+footer .slide-brands a i{
+    font-size: 25px;
+    color: black;
+    
+}
+footer .slide-brands img {
+    height: 50px;
+    width: 130px;
+    transform: translateY(40px);
+}
+footer .container-fluid h3{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+footer .container-fluid .and{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
+    color: white;
+    display: block;
+    width: 100%;
+    line-height: 100%;
+    text-align: center !important;
+    position: relative;
+    margin: 10px 0;
+}
+footer .container-fluid .and::after{
+    content: " ";
+    position: absolute;
+    top: -5px;
+    right: 30px;
+    height: 50px;
+    width: -6px;
+    border: 3px solid transparent;
+    border-left-color: white ;
+    transform: rotate(90deg);
+}
+footer .container-fluid .and::before{
+    content: " ";
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    height: 50px;
+    width: -6px;
+    border: 3px solid transparent;
+    border-left-color: white ;
+    transform: rotate(90deg);
+}
+footer .slide-founder {
+    text-align: center;
+}
+footer .slide-founder i{
+    font-size: 30px;
+    color: white;
+    height: 80px;
+    line-height: 80px;
+}
+footer .slide-founder .slides{
+    background-image: url(img/hm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+footer .container-fluid:first-child  p {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+footer .container-fluid:first-child #name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+footer .container-fluid:first-child #name span{
+    color: #ff8b25;
+}
+footer .container-fluid:nth-child(2){
+    background-color: #ebebeb;
+}
+footer .container-fluid:nth-child(2) h3,.container-fluid:nth-child(2) .and{
+    color: black;
+}
+footer .container-fluid:nth-child(2) .and::after,.container-fluid:nth-child(2) .and::before{
+    border-left-color: black;
+}
+footer .container-fluid:nth-child(2) p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+footer .blog-post{
+    position: relative;
+}
+footer .blog-post > .col {
+    background-color: white;
+    height: 260px;
+    line-height: 100%;
+    padding: 10px;
+    
+} 
+footer .blog-post h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
+}
+footer .blog-post p{
+    padding: 5px;
+}
+footer .blog-post .read-more a {
+    color: black;
+    height: 80px;
+    line-height: 80px;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+footer .view-blog a{
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+footer .container-fluid:nth-child(3) {
+    height: 150px;
+    background-image: url(img/black-and-white-buildings-city-1380.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -225px;
+}
+footer .container-fluid:nth-child(3) .row,.container-fluid:nth-child(3) .col{
+    height: 150px;
+    line-height: 150px;
+}
+footer .container-fluid:nth-child(3) p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+footer .container-fluid:nth-child(3) a{
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 10px 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+footer .container-fluid:nth-child(3) .container > span{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
